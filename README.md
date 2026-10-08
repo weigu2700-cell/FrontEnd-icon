@@ -2,6 +2,20 @@
 
 为前端开发与制造业 ERP 项目制作的 VS Code 文件图标主题。文件采用圆角徽标；所有目录保留统一的文件夹页签和外轮廓；业务图形以 Layered 叠层方式放在夹面右下方。未匹配业务名称的普通目录使用蓝色/黄色文件夹。TS/JS 等文字采用 Helvetica Neue Bold 的实心轮廓，统一字重和留白。全部图标采用独立 SVG 矢量路径，字体无需安装，主题不运行后台代码。
 
+## 预览
+
+![Forge Icons 留白与比例预览](previewIcon/forge-padding-preview.png)
+
+上图展示文件徽标的安全区、文件夹轮廓与业务图形的叠层比例。
+
+在线预览全部图标（可搜索、切换 32px / 16px 与深浅背景）：
+
+- [打开预览页](https://weigu2700-cell.github.io/FrontEnd-icon/preview.html)（GitHub Pages，需先启用）
+- [下载 preview.html](https://raw.githubusercontent.com/weigu2700-cell/FrontEnd-icon/main/preview.html)（单文件，下载后双击即可在浏览器中离线查看）
+- [在 GitHub 上查看 preview.html](https://github.com/weigu2700-cell/FrontEnd-icon/blob/main/preview.html)
+
+> `preview.html` 是自包含的单文件，图标以行内 SVG 内嵌，无需联网或额外资源即可打开。
+
 ## 安装和切换
 
 1. VS Code 扩展面板右上角 `…` → **从 VSIX 安装**，选择随附的 `forge-frontend-erp-icons-1.4.2.vsix`。
@@ -22,7 +36,7 @@
 - 常用目录：组件、页面、接口、服务、hooks、工具、状态、路由、资源、样式、类型、配置、测试、文档、脚本、依赖、权限、用户、报表、国际化等。
 - ERP：采购、销售、库存、仓库、入库、出库、调拨、生产、BOM、MRP/MPS/APS、工单、工艺、质检、设备、维护、物料、产品、供应商、客户、财务、发票、物流、批次追溯、委外、报废、人事等常见名称。
 
-共 235 个 SVG（含展开状态）、429 个扩展名映射、6544 个精确文件名映射、627 个目录名称映射。完整清单见 `associations.json`；打开 `preview.html` 可搜索并查看 32px / 16px 预览、切换深浅背景。
+共 235 个 SVG（含展开状态）、429 个扩展名映射、6544 个精确文件名映射、627 个目录名称映射。完整清单见 `associations.json`；打开 `preview.html` 可搜索并查看 32px / 16px 预览、切换深浅背景，下载链接见上方[预览](#预览)一节。
 
 ## 1.4.2 留白修正
 
