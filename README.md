@@ -8,7 +8,9 @@
 [![Icons](https://img.shields.io/badge/icons-235%20SVG-orange.svg)](icons)
 [![Mappings](https://img.shields.io/badge/mappings-7600%2B-purple.svg)](associations.json)
 
-文件采用圆角徽标；所有目录保留统一的文件夹页签和外轮廓；业务图形以 Layered 叠层方式放在夹面右下方。未匹配业务名称的普通目录使用蓝色/黄色文件夹。TS/JS 等文字采用 Helvetica Neue Bold 的实心轮廓，统一字重和留白。全部图标采用独立 SVG 矢量路径，字体无需安装，主题不运行后台代码。
+> **声明**：本主题为个人开发项目，未发布至 VS Code Marketplace。项目中引用的技术名称、品牌标识和视觉元素归各自权利人所有，本项目的 MIT 许可不涵盖任何第三方商标或品牌资产。图标中出现的品牌图形为基于公开视觉参考的独立适配绘制，如有疑问请联系处理。
+
+文件采用圆角徽标；所有目录保留统一的文件夹页签和外轮廓；业务图形以 Layered 叠层方式放在夹面右下方。未匹配业务名称的普通目录使用蓝色/黄色文件夹。TS/JS 等文字为独立设计的实心轮廓字母，统一字重和留白。全部图标采用独立 SVG 矢量路径，不依赖系统字体，主题不运行后台代码。
 
 ## 目录
 
@@ -177,13 +179,13 @@ forge-icons/
 
 ## 更新日志
 
-### 1.4.3 — ArkTS / HarmonyOS 品牌图形同步
+### 1.4.3 — ArkTS / HarmonyOS 图标更新
 
-- ETS 使用华为 ArkTS 官网缎带 A 视觉的实心矢量适配图形，替换 ETS 字母。
-- HarmonyOS 文件及对应目录使用官方字标的圆环与短横特征，替换 H 字母及旧芯片图形。
-- 与 DevEco 版共用 `scripts/brand-art.json` 的路径、颜色和实测边界；保持 16×16 安全区、至少 3.4 单位内边距与等比缩放。
+- ETS 文件图标更新为基于公开视觉参考的独立适配图形，替换旧版 ETS 字母样式。
+- HarmonyOS 文件及对应目录图标更新为独立绘制的圆环与短横图形，替换旧版 H 字母及芯片图形。
+- 图形路径、适配尺寸与边界数据记录在 `scripts/brand-art.json`；保持 16×16 安全区、至少 3.4 单位内边距与等比缩放。
 - 鸿蒙配置与 HAP / HAR / HSP 文件沿用原有匹配规则；蓝色、黄色主题同步更新。
-- 图形为 IDE 小尺寸适配版，来源及品牌权利见第三方声明。
+- 图形为 IDE 小尺寸用途的独立设计，相关技术名称与品牌标识归各自权利人所有。
 
 
 ### 1.4.2 — 留白修正
@@ -192,12 +194,12 @@ forge-icons/
 
 ### 1.4.1 — 配色调整
 
-Vue 和 `index.vue` 的浅薄荷底色改为低饱和深墨绿 `#24332F`，融入深色资源管理器；官方标志的颜色、尺寸和入口叠页结构保持不变。
+Vue 和 `index.vue` 的浅薄荷底色改为低饱和深墨绿 `#24332F`，融入深色资源管理器；图形颜色、尺寸和入口叠页结构保持不变。
 
 ### 1.4.0 — Layered 文件夹
 
 - 文件夹采用 Layered：保留完整页签和前后夹面，业务图形在右下方叠层呈现。
-- Vue 使用官方 `vuejs/art` 图形和 `#42B883` / `#35495E` 配色；`index.vue` 使用专属叠页入口样式。
+- Vue 图标基于公开设计参考独立绘制，配色参考社区惯用色；`index.vue` 使用专属叠页入口样式。
 - 新增 39 类业务文件图标，例如 `purchase.ts`、`inventory.js`、`workOrder.ets`、`production.dart`、`finance.vue`。
 - 支持复合后缀：`*.api.ts`、`*.service.ts`、`*.store.ts`、`*.dto.ts`、`*.guard.ts`，以及对应 JS / ETS / Dart 等扩展。主题中登记的是 `service.ts` 这样的扩展名，不使用通配符。
 - 显式业务名优先，例如 `purchase.service.ts` 显示采购；通用 `session.service.ts` 显示服务。`index.vue` 优先显示入口，测试文件和 `.d.ts` 声明仍保留专用图标。
@@ -205,13 +207,17 @@ Vue 和 `index.vue` 的浅薄荷底色改为低饱和深墨绿 `#24332F`，融�
 
 ## 设计参考
 
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)：语义颜色与业务目录标识。
-- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)：语言和工具链的识别覆盖。
-- [File Icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)：小尺寸下的文件类型区分。
+以下项目在图标主题设计方面提供了启发和参考，本项目的图标均为独立设计、独立绘制，未使用上述项目的任何素材或代码：
+
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)：语义颜色与业务分类思路的参考。
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)：语言和工具链覆盖范围的参考。
+- [File Icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)：小尺寸下文件类型区分的参考。
 - [VS Code 官方主题文档](https://code.visualstudio.com/api/extension-guides/file-icon-theme)：原生文件名、扩展名和目录匹配机制。
 
 ## 许可
 
-本项目代码采用 [MIT 许可](LICENSE)。1.4.0 的业务目录轮廓采用 [Material Design Icons](https://github.com/Templarian/MaterialDesign-SVG)（`@mdi/svg` 7.4.47）的完整矢量路径，授权见 [`THIRD-PARTY-NOTICES.txt`](THIRD-PARTY-NOTICES.txt) 与 [`LICENSE-APACHE-2.0.txt`](LICENSE-APACHE-2.0.txt)。
+本项目代码采用 [MIT 许可](LICENSE)。业务目录轮廓图形基于 [Material Design Icons](https://github.com/Templarian/MaterialDesign-SVG)（`@mdi/svg` 7.4.47），遵循 Apache 2.0 许可，详见 [`THIRD-PARTY-NOTICES.txt`](THIRD-PARTY-NOTICES.txt) 与 [`LICENSE-APACHE-2.0.txt`](LICENSE-APACHE-2.0.txt)。
 
-文件图标和普通文件夹依据用户参考绘制；文件及目录图形来源清单见 [`scripts/folder-art.json`](scripts/folder-art.json) 和 [`scripts/solid-art.json`](scripts/solid-art.json)。技术名称及识别符号归其各自权利人所有；这是本地自用主题，没有发布到 Marketplace。
+**商标声明**：本项目中出现的所有技术名称（如 TypeScript、JavaScript、Vue、React、ArkTS、HarmonyOS、Flutter、Dart 等）及品牌标识均为其各自权利人的商标或注册商标。图标中的品牌图形为本项目基于公开视觉参考独立绘制的适配版本，并非原始官方素材的复制品。本项目的使用不暗示与任何品牌方存在关联或获得认可。本项目的 MIT 许可不授予任何第三方商标或品牌资产的使用权利。图形来源清单见 [`scripts/brand-art.json`](scripts/brand-art.json) 和 [`scripts/solid-art.json`](scripts/solid-art.json)。
+
+本主题为个人项目，未发布至 VS Code 官方 Marketplace。
