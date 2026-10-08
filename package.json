@@ -2,7 +2,7 @@
   "name": "forge-frontend-erp-icons",
   "displayName": "Forge Icons · Frontend & ERP",
   "description": "Rounded frontend file icons and semantic manufacturing ERP folders. Blue and yellow folder variants. 前端与制造业 ERP 图标主题。",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "publisher": "guwei-local",
   "engines": {
     "vscode": "^1.80.0"

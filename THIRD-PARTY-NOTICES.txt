@@ -28,3 +28,16 @@ The MIT license applies to all non-font and non-icon files.
 Vue logo
 https://github.com/vuejs/art/blob/master/logo.svg
 Official geometry and colors #42B883 and #35495E, scaled uniformly into the file icon. Vue is a trademark of its respective owners. No affiliation is implied.
+
+Huawei ArkTS and HarmonyOS visual references (VS Code 1.4.3)
+https://developer.huawei.com/consumer/cn/arkts/
+https://developer.huawei.com/allianceCmsResource/resource/HUAWEI_Developer_VUE/images/Ark/overview-pathway/ArkTS.webp
+https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/harmonyos-4/img/kv/kv-title.svg
+
+ArkTS: a filled vector interpretation of the official ribbon A visual.
+HarmonyOS: the circular O and blue underline from the official wordmark,
+cropped and adapted as a compact IDE icon. The source references and design
+paths are recorded in scripts/brand-art.json. These are adapted icons, not
+unmodified official logo assets. Huawei brand rights remain with Huawei;
+the project's MIT license does not grant rights to Huawei trademarks or artwork.
+No affiliation or endorsement is implied.

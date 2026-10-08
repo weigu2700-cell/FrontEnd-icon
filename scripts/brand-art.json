@@ -1,0 +1,42 @@
+{
+  "arkts": {
+    "color": "#168CF2",
+    "paths": [
+      "M252 83C265 82 273 93 279 109L402 397C410 416 402 430 388 431C377 433 370 425 363 411L250 151L237 119C231 104 235 86 252 83Z",
+      "M235 97C241 83 252 79 263 86C273 92 277 104 271 118L146 416C140 430 127 438 116 430C106 424 109 412 114 399Z",
+      "M112 402C158 307 247 204 367 177C388 172 413 169 419 184C427 204 391 231 349 248L347 242C372 226 390 211 396 198C365 200 324 221 284 250C231 288 182 344 143 419C138 429 127 435 118 429C108 423 108 412 112 402Z"
+    ],
+    "fills": [
+      "#F4FAFF",
+      "#D7EDFA",
+      "#FFFFFF"
+    ],
+    "bounds": [
+      109.3,
+      82.81770833333333,
+      310.75,
+      350.1802083333333
+    ],
+    "reference": "https://developer.huawei.com/allianceCmsResource/resource/HUAWEI_Developer_VUE/images/Ark/overview-pathway/ArkTS.webp",
+    "description": "Filled ribbon A adaptation from Huawei ArkTS official visual; not an unmodified official logo."
+  },
+  "harmony": {
+    "color": "#242A35",
+    "paths": [
+      "M206.321,0a42.766,42.766,0,1,1-42.763,42.766A42.766,42.766,0,0,1,206.321,0m0,12.781a29.985,29.985,0,1,0,29.988,29.985,29.985,29.985,0,0,0-29.988-29.985",
+      "M177.811 98.801H234.831V110.599H177.811Z"
+    ],
+    "fills": [
+      "#F0F5FF",
+      "#1F69FF"
+    ],
+    "bounds": [
+      163.55855416666668,
+      0.06700625000000038,
+      85.52489166666666,
+      110.46498749999999
+    ],
+    "reference": "https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/harmonyos-4/img/kv/kv-title.svg",
+    "description": "Compact crop of official HarmonyOS wordmark O and blue underline; adapted for IDE file icons."
+  }
+}

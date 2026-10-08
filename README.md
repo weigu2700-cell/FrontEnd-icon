@@ -2,7 +2,7 @@
 
 > 为前端开发与制造业 ERP 项目制作的 VS Code 文件图标主题。圆角文件徽标、统一文件夹轮廓、Layered 叠层业务图形。
 
-[![Version](https://img.shields.io/badge/version-1.4.2-blue.svg)](package.json)
+[![Version](https://img.shields.io/badge/version-1.4.3-blue.svg)](package.json)
 [![VS Code](https://img.shields.io/badge/VS%20Code-%5E1.80.0-007ACC.svg)](https://code.visualstudio.com/)
 [![License](https://img.shields.io/badge/license-MIT%20AND%20Apache--2.0-green.svg)](LICENSE)
 [![Icons](https://img.shields.io/badge/icons-235%20SVG-orange.svg)](icons)
@@ -25,9 +25,9 @@
 
 ## 预览
 
-![Forge Icons 留白与比例预览](previewIcon/forge-padding-preview.png)
+![Forge Icons 图标预览](previewIcon/forge-icons-preview.png)
 
-上图展示文件徽标的安全区、文件夹轮廓与业务图形的叠层比例。
+上图展示 1.4.3 的前端文件、ArkTS / HarmonyOS、业务文件和 Layered 业务目录；底部展示 16px 实际尺寸。预览图提供高清 PNG 和可缩放 SVG 两种格式。
 
 在线预览全部图标（可搜索、切换 32px / 16px 与深浅背景）：
 
@@ -50,7 +50,7 @@
 
 ## 安装
 
-1. 从 [Releases](https://github.com/weigu2700-cell/FrontEnd-icon/releases) 下载 `forge-frontend-erp-icons-1.4.2.vsix`（或使用本地 `python3 scripts/package.py` 生成）。
+1. 从 [Releases](https://github.com/weigu2700-cell/FrontEnd-icon/releases) 下载 `forge-frontend-erp-icons-1.4.3.vsix`（或使用本地 `python3 scripts/package.py` 生成）。
 2. VS Code 扩展面板右上角 `…` → **从 VSIX 安装**，选择该文件。
 3. `⌘⇧P` → **首选项: 文件图标主题**（Preferences: File Icon Theme）。
 4. 选择 **Forge Icons · Blue Folders**（默认推荐），或 **Forge Icons · Yellow Folders**。
@@ -139,6 +139,15 @@ forge-icons/
 ```
 
 ## 更新日志
+
+### 1.4.3 — ArkTS / HarmonyOS 品牌图形同步
+
+- ETS 使用华为 ArkTS 官网缎带 A 视觉的实心矢量适配图形，替换 ETS 字母。
+- HarmonyOS 文件及对应目录使用官方字标的圆环与短横特征，替换 H 字母及旧芯片图形。
+- 与 DevEco 版共用 `scripts/brand-art.json` 的路径、颜色和实测边界；保持 16×16 安全区、至少 3.4 单位内边距与等比缩放。
+- 鸿蒙配置与 HAP / HAR / HSP 文件沿用原有匹配规则；蓝色、黄色主题同步更新。
+- 图形为 IDE 小尺寸适配版，来源及品牌权利见第三方声明。
+
 
 ### 1.4.2 — 留白修正
 

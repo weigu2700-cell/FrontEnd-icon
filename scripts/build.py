@@ -16,6 +16,9 @@ THEMES.mkdir(exist_ok=True)
 # Pre-exported Helvetica Neue Bold outlines preserve the actual font contours.
 LETTERING = json.loads((ROOT/'scripts'/'lettering.json').read_text())
 FOLDER_ART = json.loads((ROOT/'scripts'/'folder-art.json').read_text())
+# Shared with the DevEco icon library: measured ink bounds preserve the padding.
+BRAND_ART = json.loads((ROOT/'scripts'/'brand-art.json').read_text())
+FOLDER_ART['harmony'] = {**BRAND_ART['harmony'], 'color':'#1F69FF'}
 def letters(s):
     return LETTERING[s]
 
@@ -57,6 +60,12 @@ def svg(body):
 def write_icon(name, body):
     (ICONS/(name+'.svg')).write_text(svg(body))
 def badge(name, color, symbol, fg='#FFFFFF'):
+    if name in BRAND_ART:
+        art=BRAND_ART[name]
+        paths=''.join(f'<path d="{d}" fill="{fill}"/>' for d,fill in zip(art['paths'],art['fills']))
+        glyph=fit_glyph(paths,art['bounds'])
+        write_icon('file-'+name, f'<rect x=".6" y=".6" width="22.8" height="22.8" rx="4.5" fill="{art["color"]}"/><g data-role="file-glyph" data-safe-box="4 4 16 16">{glyph}</g>')
+        return
     if name in ('vue','vue-index'):
         write_icon('file-'+name,vue_badge(name=='vue-index'));return
     palette={'typescript':'#2F92FA','javascript':'#F7CE36','declaration':'#387BE5',
@@ -276,7 +285,7 @@ for color in ['blue','yellow']:
     (THEMES/(color+'-icon-theme.json')).write_text(json.dumps(theme,ensure_ascii=False,indent=2)+'\n')
 
 package={'name':'forge-frontend-erp-icons','displayName':'Forge Icons · Frontend & ERP','description':'Rounded frontend file icons and semantic manufacturing ERP folders. Blue and yellow folder variants. 前端与制造业 ERP 图标主题。',
- 'version':'1.4.2','publisher':'guwei-local','engines':{'vscode':'^1.80.0'},'categories':['Themes'],'keywords':['icons','frontend','erp','vue','react','arkts','flutter'],
+ 'version':'1.4.3','publisher':'guwei-local','engines':{'vscode':'^1.80.0'},'categories':['Themes'],'keywords':['icons','frontend','erp','vue','react','arkts','flutter'],
  'license':'(MIT AND Apache-2.0)','contributes':{'iconThemes':[{'id':'forge-icons-'+c,'label':'Forge Icons · '+c.title()+' Folders','path':'./themes/'+c+'-icon-theme.json'} for c in ['blue','yellow']]},
  'scripts':{'build':'python3 scripts/build.py','test':'python3 scripts/validate.py'}}
 (ROOT/'package.json').write_text(json.dumps(package,ensure_ascii=False,indent=2)+'\n')
