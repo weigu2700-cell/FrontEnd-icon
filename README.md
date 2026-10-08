@@ -50,20 +50,57 @@
 
 ## 安装
 
-1. 从 [Releases](https://github.com/weigu2700-cell/FrontEnd-icon/releases) 下载 `forge-frontend-erp-icons-1.4.3.vsix`（或使用本地 `python3 scripts/package.py` 生成）。
-2. VS Code 扩展面板右上角 `…` → **从 VSIX 安装**，选择该文件。
-3. `⌘⇧P` → **首选项: 文件图标主题**（Preferences: File Icon Theme）。
-4. 选择 **Forge Icons · Blue Folders**（默认推荐），或 **Forge Icons · Yellow Folders**。
+全程约 1 分钟，只需下载一个文件、点两次菜单。
 
-用户设置对应为：
+### 第 1 步：下载安装包
 
-```jsonc
-{
-  "workbench.iconTheme": "forge-icons-blue" // 黄色为 "forge-icons-yellow"
-}
+点击下面的链接，浏览器会自动开始下载（约 208 KB）：
+
+**➡️ [下载 forge-frontend-erp-icons-1.4.3.vsix](https://github.com/weigu2700-cell/FrontEnd-icon/releases/download/v1.4.3/forge-frontend-erp-icons-1.4.3.vsix)**
+
+> 如果链接打不开，请到 [Releases 页面](https://github.com/weigu2700-cell/FrontEnd-icon/releases) 手动下载 `forge-frontend-erp-icons-1.4.3.vsix`。
+> 下载后**不要解压**，`.vsix` 文件直接使用。
+
+### 第 2 步：在 VS Code 中安装
+
+1. 打开 VS Code。
+2. 按 `⌘⇧X`（macOS）或 `Ctrl+Shift+X`（Windows / Linux）打开**扩展**面板。
+3. 点击扩展面板右上角的 `…`（更多操作）按钮。
+4. 在菜单中选择 **从 VSIX 安装…**（Install from VSIX…）。
+5. 在弹出的文件选择框中找到刚下载的 `forge-frontend-erp-icons-1.4.3.vsix`，选中并确认。
+6. 右下角出现「已完成安装」提示即表示成功。
+
+> 找不到 `…` 按钮？也可以按 `⌘⇧P` / `Ctrl+Shift+P` 打开命令面板，输入 `Install from VSIX` 并回车，效果相同。
+
+### 第 3 步：启用图标主题
+
+1. 按 `⌘⇧P`（macOS）或 `Ctrl+Shift+P`（Windows / Linux）打开命令面板。
+2. 输入 `文件图标主题`（或 `File Icon Theme`），选择 **首选项: 文件图标主题**。
+3. 在列表中选择：
+   - **Forge Icons · Blue Folders** — 蓝色文件夹，默认推荐
+   - **Forge Icons · Yellow Folders** — 黄色文件夹
+
+图标立即生效，无需重启。
+
+### 常见问题
+
+| 问题 | 解决办法 |
+| --- | --- |
+| 下载后是 `.zip` 或文件夹 | 不要解压。若浏览器自动解压，请重新下载并选择「保留原文件」 |
+| 菜单里没有「从 VSIX 安装…」 | 用命令面板：`⌘⇧P` → 输入 `Install from VSIX` |
+| 安装后图标没变化 | 确认已执行第 3 步选择主题；若仍无效，按 `⌘⇧P` → `Developer: Reload Window` 重载窗口 |
+| 想换回原来的图标 | 重复第 3 步，在列表中选择原来的主题（如 **Material Icon Theme**）即可，无需卸载本主题 |
+| 想手动改配置 | 在 `settings.json` 中设置 `"workbench.iconTheme": "forge-icons-blue"`（黄色为 `"forge-icons-yellow"`） |
+
+> 工作区或配置文件中的同名设置会覆盖用户设置。若主题不生效，请检查当前工作区的 `.vscode/settings.json` 是否也设置了 `workbench.iconTheme`。
+
+### 从源码构建（可选）
+
+仅在需要自行修改图标时使用：
+
+```bash
+python3 scripts/package.py   # 在仓库上一级目录生成 forge-frontend-erp-icons-1.4.3.vsix
 ```
-
-工作区或配置文件中的同名设置可能覆盖用户设置。恢复原图标：在文件图标主题选择器中选回 **Material Icon Theme**，原主题无需卸载。
 
 ## 图标覆盖范围
 
