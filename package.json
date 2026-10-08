@@ -1,0 +1,41 @@
+{
+  "name": "forge-frontend-erp-icons",
+  "displayName": "Forge Icons · Frontend & ERP",
+  "description": "Rounded frontend file icons and semantic manufacturing ERP folders. Blue and yellow folder variants. 前端与制造业 ERP 图标主题。",
+  "version": "1.4.2",
+  "publisher": "guwei-local",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "icons",
+    "frontend",
+    "erp",
+    "vue",
+    "react",
+    "arkts",
+    "flutter"
+  ],
+  "license": "(MIT AND Apache-2.0)",
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "forge-icons-blue",
+        "label": "Forge Icons · Blue Folders",
+        "path": "./themes/blue-icon-theme.json"
+      },
+      {
+        "id": "forge-icons-yellow",
+        "label": "Forge Icons · Yellow Folders",
+        "path": "./themes/yellow-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "test": "python3 scripts/validate.py"
+  }
+}
